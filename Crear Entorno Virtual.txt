@@ -1,0 +1,73 @@
+
+## 1️⃣ Verificar la versión de Python instalada
+
+Abre la terminal y ejecuta:
+
+```bash
+python --version
+```
+
+El sistema debe mostrar una versión similar a:
+
+```
+Python 3.10.x
+```
+
+Si **no tienes instalada la versión 3.10**, debes descargarla e instalarla desde el sitio oficial de Python antes de continuar.
+
+---
+
+# Crear y activar el entorno virtual
+
+## 2️⃣ Crear el entorno virtual con Python 3.10
+
+Ejecuta en la terminal:
+
+```bash
+py -3.10 -m venv venv
+```
+
+Esto creará un entorno virtual llamado **venv** dentro del proyecto.
+
+---
+
+## 3️⃣ Activar el entorno virtual
+
+En Windows ejecuta:
+
+```bash
+venv\Scripts\activate
+```
+
+Si el entorno se activó correctamente, verás algo similar a:
+
+```
+(venv) C:\ruta_del_proyecto>
+```
+
+---
+
+# Instalar las dependencias del proyecto
+
+## 4️⃣ Instalar las librerías necesarias
+
+Si el proyecto incluye un archivo **requirements.txt**, instala todas las dependencias con:
+
+```bash
+pip install -r requirements.txt
+```
+
+En caso de instalar las librerías manualmente, ejecuta:
+
+```bash
+pip install mediapipe==0.10.14 opencv-python==4.9.0.80 scikit-learn pandas joblib
+```
+
+
+Ejecutar
+python 1-capturar_gestos.py
+2️⃣ Entrenar el modelo de reconocimiento
+python 2-entrenar_modelo.py
+
+Finalmente ejecuta:
+python 3-reconocer_gestos.py
